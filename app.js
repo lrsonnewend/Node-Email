@@ -6,15 +6,15 @@ var remetente = nodeMailer.createTransport({
     port: 465,
     secure: true,
     auth:{
-        user: 'lucas.lr184@gmail.com',
-        pass: 'skateordie2006'}
+        user: '',
+        pass: ''}
 });
 
 var emailSend={
-    from: 'juliano.marcondes.sjc@hotmail.com',
-    to:'lucas.lr184@gmail.com',
-    subject: 'testando nodemailer (mais um)',
-    text: 'Pode ignorar, só estou testando',
+    from: '',
+    to:'m',
+    subject: 'testando nodemailer',
+    text: 'só estou testando',
 };
 
 remetente.sendMail(emailSend, function (error){
